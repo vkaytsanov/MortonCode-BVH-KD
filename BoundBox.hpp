@@ -1,6 +1,7 @@
+#pragma once
 #include "Point3D.hpp"
 #include "Vector3D.hpp"
-#pragma once
+
 
 
 struct BoundBox { 
@@ -69,6 +70,7 @@ BoundBox BoundBox::unite(BoundBox b1, BoundBox b2) {
 	if (x && y && z) {
 		return Union(b1, b2);
 	}
+	else return *this;
 }
 
 BoundBox BoundBox::unite(BoundBox b2) {

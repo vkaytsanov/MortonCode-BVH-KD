@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 #include <cassert>
 #include <algorithm>
@@ -32,12 +33,13 @@ struct BVHNode {
 		nPrimitives = n;
 		box = b;
 		children[0] = children[1] = nullptr;
+
 	}
 	void InitInterior(int axis, BVHNode* c0, BVHNode* c1) {
-		assert(c0 != NULL || c1 != NULL);
+		//assert(c0 != nullptr || c1 != nullptr);
 		children[0] = c0;
 		children[1] = c1;
-		this->box = Union(c0->box, c1->box);
+		box = Union(c0->box, c1->box);
 		splitAxis = axis;
 		nPrimitives = 0;
 	}
@@ -88,7 +90,7 @@ struct BVH {
 			(1024.f * 1024.f),
 			float(arena.TotalAllocated()) /
 			(1024.f * 1024.f));
-		assert(root != NULL);
+		assert(root != nullptr);
 		nodes = AllocAligned<LinearBVHNode>(totalNodes);
 		int offset = 0;
 		flattenBVHTree(root, &offset);
@@ -246,7 +248,7 @@ BVHNode* BVH::emit(BVHNode*& nodes, const std::vector<BVHPrimitiveInfo>& BVHPrim
 		int firstPrimOffset = *orderedPrimsOffset;
 		for (int i = 0; i < primitivesCount; i++) {
 			int index = mortonPrimitives[i].primitiveIndex;
-			orderedPrimitives[firstPrimOffset + i] = primitives[index];
+			orderedPrimitives[(int)(firstPrimOffset + i)] = primitives[index];
 			box = box.Union(box, BVHPrimitive[index].box);
 		}
 		tmp->InitLeaf(0, primitivesCount, box);
@@ -300,7 +302,7 @@ BVHNode* BVH::buildSAH(MemoryArena& arena, std::vector<BVHNode*>& treeRoots, int
 		Point3D centroid = Point3D((treeRoots[i]->box.pMin.x + treeRoots[i]->box.pMax.x) * 0.5f, (treeRoots[i]->box.pMin.y + treeRoots[i]->box.pMax.y) * 0.5f, (treeRoots[i]->box.pMin.z + treeRoots[i]->box.pMax.z) * 0.5f);
 		centroidBox = Union(centroidBox, centroid);
 	}
-	const int dimension = centroidBox.MaximumExtent();
+	const int dimension = centroidBox.MaximumExtent() % 3;
 	const int nBuckets = 12;
 	struct Buckets {
 		int count = 0;
@@ -309,7 +311,7 @@ BVHNode* BVH::buildSAH(MemoryArena& arena, std::vector<BVHNode*>& treeRoots, int
 	Buckets buckets[nBuckets];
 	for (int i = start; i < end; i++) {
 		float centroid = (treeRoots[i]->box.pMin[dimension] * 0.5f + treeRoots[i]->box.pMax[dimension] * 0.5f) ;
-		int b = nBuckets * ((centroid - centroidBox.pMin[dimension]) / (centroidBox.pMax[dimension] - centroidBox.pMin[dimension]));
+		int b = (int)(nBuckets * ((centroid - centroidBox.pMin[dimension]) / (centroidBox.pMax[dimension] - centroidBox.pMin[dimension])));
 		if (b == nBuckets) b = nBuckets - 1;
 		//assert(b < nBuckets);
 		buckets[b].count++;
@@ -341,15 +343,15 @@ BVHNode* BVH::buildSAH(MemoryArena& arena, std::vector<BVHNode*>& treeRoots, int
 		}
 	}
 
-	BVHNode** pmid = std::partition(&treeRoots[start], &treeRoots[end - 1] + 1, [=](const BVHNode* node) {
-			double centroid = (node->box.pMin[dimension]*0.5f + node->box.pMax[dimension] * 0.5f) ;
-			int b = nBuckets * ((centroid - centroidBox.pMin[dimension]) / (centroidBox.pMax[dimension] - centroidBox.pMin[dimension]));
+	BVHNode** pmid = std::partition(&treeRoots[start], &treeRoots[(int)(end - 1)] + 1, [=](const BVHNode* node) {
+			float centroid = (node->box.pMax[dimension] * 0.5f + node->box.pMin[dimension]*0.5f) ;
+			int b = (int)(nBuckets * ((centroid - centroidBox.pMin[dimension]) / ((int)centroidBox.pMax[dimension] - centroidBox.pMin[dimension])));
 			if (b == nBuckets) b = nBuckets - 1;
 			return b <= minCostSplitBucket;
 		});
-	assert(pmid != NULL);
+	assert(pmid != nullptr);
 	//std::cout << pmid << "  " << &treeRoots[0];
-	int mid = pmid - &treeRoots[0];
+	int mid = (int)(pmid - &treeRoots[0]);
 	//std::cout << start << " " << mid << std::endl;
 	//std::cout << mid << " " << end << std::endl;
 	std::cout << dimension << std::endl;

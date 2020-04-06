@@ -1,8 +1,9 @@
+#pragma once
 #include <vector>
 #include <random>
 #include "Point3D.hpp"
 #include "BoundBox.hpp"
-#pragma once
+
 
 struct Primitive {
 	Primitive(Point3D p) {
@@ -57,7 +58,7 @@ void Screen::generatePoints(int n) {
 
 void Screen::showPoints() {
 	for (Point3D p : points) {
-		printf("\tX: %d, Y: %d, Z: %d\n", p.x, p.y, p.z);
+		printf("\tX: %f, Y: %f, Z: %f\n", p.x, p.y, p.z);
 	}
 }
 

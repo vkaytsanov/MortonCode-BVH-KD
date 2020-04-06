@@ -1,9 +1,10 @@
+#pragma once
 #include <list>
 #include <cstddef>
 #include <algorithm>
 #include <malloc.h>
 #include <stdlib.h> 
-#pragma once
+
 #define ARENA_ALLOC(arena, Type) new ((arena).Alloc(sizeof(Type))) Type
 void* AllocAligned(size_t size);
 template <typename T>
