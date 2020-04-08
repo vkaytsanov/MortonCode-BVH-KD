@@ -1,0 +1,15 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_01e0f\fast && 	"D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_01e0f.dir\build.make /nologo -L                  CMakeFiles\cmTC_01e0f.dir\build
+Building C object CMakeFiles/cmTC_01e0f.dir/CheckIncludeFile.c.obj
+	D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\cl.exe @C:\Users\vikto\AppData\Local\Temp\nm9827.tmp
+CheckIncludeFile.c
+C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+NMAKE : fatal error U1077: 'D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\cl.exe' : return code '0x2'
+Stop.
+NMAKE : fatal error U1077: '"D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\bin\HostX86\x86\nmake.exe"' : return code '0x2'
+Stop.
+
+
+

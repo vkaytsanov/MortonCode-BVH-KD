@@ -1,0 +1,3 @@
+C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/MortonCode_BVH_KD.dir
+C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/rebuild_cache.dir

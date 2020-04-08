@@ -1,0 +1,97 @@
+The system is: Windows - 10.0.18362 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Visual Studio 2019/VC/Tools/MSVC/14.20.27404/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.20.27404 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.20.27404.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Visual Studio 2019/VC/Tools/MSVC/14.20.27404/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.20.27404 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.20.27404.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_ca3df\fast && 	"D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_ca3df.dir\build.make /nologo -L                  CMakeFiles\cmTC_ca3df.dir\build
+Building C object CMakeFiles/cmTC_ca3df.dir/testCCompiler.c.obj
+	D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\cl.exe @C:\Users\vikto\AppData\Local\Temp\nm9AF1.tmp
+testCCompiler.c
+Linking C executable cmTC_ca3df.exe
+	"D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_ca3df.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_ca3df.dir\objects1.rsp @C:\Users\vikto\AppData\Local\Temp\nm9BCD.tmp
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_25ff3\fast && 	"D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_25ff3.dir\build.make /nologo -L                  CMakeFiles\cmTC_25ff3.dir\build
+Building C object CMakeFiles/cmTC_25ff3.dir/CMakeCCompilerABI.c.obj
+	D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\cl.exe @C:\Users\vikto\AppData\Local\Temp\nmA429.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTC_25ff3.exe
+	"D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_25ff3.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_25ff3.dir\objects1.rsp @C:\Users\vikto\AppData\Local\Temp\nmA4B6.tmp
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_7e7db\fast && 	"D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_7e7db.dir\build.make /nologo -L                  CMakeFiles\cmTC_7e7db.dir\build
+Building CXX object CMakeFiles/cmTC_7e7db.dir/testCXXCompiler.cxx.obj
+	D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\cl.exe @C:\Users\vikto\AppData\Local\Temp\nmA8EC.tmp
+testCXXCompiler.cxx
+Linking CXX executable cmTC_7e7db.exe
+	"D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_7e7db.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_7e7db.dir\objects1.rsp @C:\Users\vikto\AppData\Local\Temp\nmA9A8.tmp
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_56d94\fast && 	"D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_56d94.dir\build.make /nologo -L                  CMakeFiles\cmTC_56d94.dir\build
+Building CXX object CMakeFiles/cmTC_56d94.dir/CMakeCXXCompilerABI.cpp.obj
+	D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\cl.exe @C:\Users\vikto\AppData\Local\Temp\nmAE79.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_56d94.exe
+	"D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_56d94.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- D:\VISUAL~2\VC\Tools\MSVC\1420~1.274\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_56d94.dir\objects1.rsp @C:\Users\vikto\AppData\Local\Temp\nmAF26.tmp
+
+
+

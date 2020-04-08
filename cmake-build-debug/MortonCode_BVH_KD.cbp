@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MortonCode_BVH_KD"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MortonCode_BVH_KD">
+				<Option output="C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/MortonCode_BVH_KD.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/vikto/source/repos/MortonCode-BVH-KD/."/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\ATLMFC\include"/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 MortonCode_BVH_KD"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MortonCode_BVH_KD/fast">
+				<Option output="C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug/MortonCode_BVH_KD.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/vikto/source/repos/MortonCode-BVH-KD/."/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\ATLMFC\include"/>
+					<Add directory="D:\Visual Studio 2019\VC\Tools\MSVC\14.20.27404\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 MortonCode_BVH_KD/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/vikto/source/repos/MortonCode-BVH-KD/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\vikto\source\repos\MortonCode-BVH-KD\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/Source.cpp">
+			<Option target="MortonCode_BVH_KD"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/core/BVH.hpp">
+			<Option target="MortonCode_BVH_KD"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/core/Screen.hpp">
+			<Option target="MortonCode_BVH_KD"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/core/memory.hpp">
+			<Option target="MortonCode_BVH_KD"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/geometry/BoundBox.hpp">
+			<Option target="MortonCode_BVH_KD"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/geometry/Point3D.hpp">
+			<Option target="MortonCode_BVH_KD"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/geometry/Vector3D.hpp">
+			<Option target="MortonCode_BVH_KD"/>
+		</Unit>
+		<Unit filename="C:/Users/vikto/source/repos/MortonCode-BVH-KD/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
